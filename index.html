@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Financeiro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Dashboard Financeiro</h1>
+
+    <div id="container">
+        <div id="formulario">
+
+            <label for="nomeGasto"><strong>Nome do Gasto:</strong></label>
+            <input type="text" id="nomeGasto" class="box">
+                    
+            <label for="valorGasto"><strong>Valor gasto:</strong></label>
+            <input type="text" id="valorGasto" class="box">
+                    
+            <label for="categoria"><strong>Categoria: </strong></label>
+            <select id="categoria" class="box"></select>
+
+            <button onclick="adicionarGasto()">Adicionar Gasto</button>
+            <button onclick="showGraficos()">Visualizar Gráficos</button>
+
+            <!-- display das despesas -->
+            <div id="showGastos">
+                <!-- script vai add -->
+            </div>
+
+        </div>
+
+        <div id="graficos">
+            <canvas id="graficoGastos"></canvas>
+            <div id="maiorGasto" class="card"></div>
+            <div id="totalGasto" class="card"></div>
+        </div>
+    
+    </div>
+        
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
